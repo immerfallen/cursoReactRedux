@@ -1,0 +1,11 @@
+.TableProdutos th {
+    background-color: darkcyan;
+}
+
+.TableProdutos .Par {
+    background-color: lightgrey;
+}
+
+.TableProdutos {
+    margin: auto;
+}
