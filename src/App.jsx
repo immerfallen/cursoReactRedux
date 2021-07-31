@@ -4,15 +4,29 @@ import "./index.css";
 import Primeiro from "./Components/basicos/Primeiro";
 import ComParam from "./Components/basicos/ComParametro";
 import Fragmento from "./Components/basicos/Fragamento";
-import Aleatorio from './Components/basicos/Aleatorio'
+import Aleatorio from "./Components/basicos/Aleatorio";
+import Card from "./Components/layout/Card";
 
 export default () => (
   <div id="app">
     <h1>Fundamento de React</h1>
-    <Aleatorio minimo={10} maximo={20}/>
-    <Primeiro />
-    <ComParam titulo="Situação do aluno" aluno="Maro" nota={9.3} />
-    <ComParam titulo="Situação do aluno" aluno="Maria" nota={6.3} />
-    <Fragmento />
+
+    <div className="cards">
+      <Card titulo="Desafio aleatório">
+        <Aleatorio minimo={10} maximo={20} />
+      </Card>
+      <Card titulo="Primeiro Componente">
+        <Primeiro />
+      </Card>
+      <Card titulo="Com parâmetro">
+        <ComParam titulo="Situação do aluno" aluno="Maro" nota={9.3} />
+      </Card>
+      <Card titulo="Com parâmetro 2">
+        <ComParam titulo="Situação do aluno" aluno="Maria" nota={6.3} />
+      </Card>
+      <Card titulo="Fragmento">
+        <Fragmento />
+      </Card>
+    </div>
   </div>
 );
