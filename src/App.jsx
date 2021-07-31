@@ -9,18 +9,22 @@ import Card from "./Components/layout/Card";
 import Familia from "./Components/basicos/Familia";
 import FamiliaMembro from "./Components/basicos/FamiliaMembro";
 import ListaAlunos from "./Components/repeticao/ListaAlunos";
-import TableProdutos from "./Components/repeticao/TableProdutos"
+import TableProdutos from "./Components/repeticao/TableProdutos";
+import ParOuImpar from "./Components/condicional/ParOuImpar";
 
 export default () => (
   <div className="App">
     <h1>Fundamento de React</h1>
 
     <div className="Cards">
-    <Card titulo="# 07 - Desafio Tabela Produtos" color="#11006f">
-        <TableProdutos/>
+      <Card titulo="# 08 - Condicional" color="#44006f">
+        <ParOuImpar number={3}/>
+      </Card>
+      <Card titulo="# 07 - Desafio Tabela Produtos" color="#11006f">
+        <TableProdutos />
       </Card>
       <Card titulo="# 06 - Repetição" color="#2f006f">
-        <ListaAlunos/>
+        <ListaAlunos />
       </Card>
       <Card titulo="# 04 - Desafio aleatório" color="#2e003e">
         <Aleatorio minimo={10} maximo={20} />
