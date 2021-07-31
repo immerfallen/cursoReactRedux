@@ -1,4 +1,3 @@
-import ReactDom from "react-dom";
 import React from "react";
 import "./App.css";
 import Primeiro from "./Components/basicos/Primeiro";
@@ -21,8 +20,8 @@ export default () => (
       <Card titulo="# 08 - Condicional" color="#44006f">
         <ParOuImpar number={3} />
         <UsuarioInfo usuario={{nome: "Fernando"}}/>
-        <UsuarioInfo usuario={{email: "fernando@gmail.com"}}/>
-        <UsuarioInfo usuario={{nome: "Maro"}}/>
+        {/* <UsuarioInfo usuario={{email: "fernando@gmail.com"}}/>
+        <UsuarioInfo usuario={{nome: "Maro"}}/> */}
       </Card>
       <Card titulo="# 07 - Desafio Tabela Produtos" color="#11006f">
         <TableProdutos />
