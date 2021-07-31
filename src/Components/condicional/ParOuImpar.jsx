@@ -1,13 +1,8 @@
-import { fireEvent } from '@testing-library/dom'
-import React from 'react'
+import { fireEvent } from "@testing-library/dom";
+import React from "react";
 
-export default props => {
-    const numero = props.number
-    const par = numero%2 === 0 
-    const impar = numero%2 !== 0 
-    return (
-        <div>
-            {par ? <span>Par</span> : <span>Impar</span>}           
-        </div>
-    )
-}
+export default (props) => {
+  const numero = props.number;
+  const par = numero % 2 === 0;
+  return <div>{par ? <span>Par</span> : <span>Impar</span>}</div>;
+};

@@ -11,6 +11,7 @@ import FamiliaMembro from "./Components/basicos/FamiliaMembro";
 import ListaAlunos from "./Components/repeticao/ListaAlunos";
 import TableProdutos from "./Components/repeticao/TableProdutos";
 import ParOuImpar from "./Components/condicional/ParOuImpar";
+import UsuarioInfo from './Components/condicional/UsuarioInfo'
 
 export default () => (
   <div className="App">
@@ -18,7 +19,10 @@ export default () => (
 
     <div className="Cards">
       <Card titulo="# 08 - Condicional" color="#44006f">
-        <ParOuImpar number={3}/>
+        <ParOuImpar number={3} />
+        <UsuarioInfo usuario={{nome: "Fernando"}}/>
+        <UsuarioInfo usuario={{email: "fernando@gmail.com"}}/>
+        <UsuarioInfo usuario={{nome: "Maro"}}/>
       </Card>
       <Card titulo="# 07 - Desafio Tabela Produtos" color="#11006f">
         <TableProdutos />
