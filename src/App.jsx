@@ -19,7 +19,7 @@ export default () => (
     <h1>Fundamento de React</h1>
 
     <div className="Cards">
-      <Card titulo="# 10 - Comunicação direta" color="#AA0033">
+      <Card titulo="# 10 - Comunicação indireta" color="#AA0033">
         <IndiretaPai />
       </Card>
       <Card titulo="# 09 - Comunicação direta" color="#660033">

@@ -2,10 +2,16 @@ import React from "react";
 
 export default (props) => {
     const cb = props.quandoClicar
+    const min = 50
+    const max = 70
+    const idadeAleatoria = () => parseInt(Math.random()*(max-min) + min)
+    const gerarNerd = () => Math.random() > 0.5 
+    
+    
     return (
     <div>
       <div>Filho</div>
-      <button onClick={_ => cb('Joao', 53, true)}>Fornecer informações</button>
+      <button onClick={_ => cb('Joao', idadeAleatoria(), gerarNerd())}>Fornecer informações</button>
     </div>
   );
 };
