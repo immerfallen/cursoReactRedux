@@ -18,3 +18,5 @@
 
 ### - Componentes controlados 
 
+![screenshot](imgs/screenshot.png)
+
